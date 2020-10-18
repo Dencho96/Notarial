@@ -32,7 +32,8 @@ gulp.task('script', function() {
 gulp.task('style', function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
-            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+            'node_modules/hamburgers/dist/hamburgers.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())

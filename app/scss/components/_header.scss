@@ -7,7 +7,16 @@
         height: 62px;
     }
 
-    &__nav-list {}
+    &__btn {
+        display: none;
+    }
+
+    &__btn-inner {
+        background-color: $gold;
+        &::before, &::after{
+            background-color: $gold;
+        }
+    }
 
     &__link {
         position: relative;
@@ -29,24 +38,29 @@
             background-color: #ffba00;
             transition: width 0.3s;
         }
-        
+
         &.active {
             color: $gold;
-            &::after{
+
+            &::after {
                 width: 100%;
             }
         }
-        &:focus,&:hover,&:active{
-            &::after{
+
+        &:focus,
+        &:hover,
+        &:active {
+            &::after {
                 width: 100%;
             }
         }
+
         &:focus {
             color: rgba($gold, 0.6);
         }
 
         &:hover {
-            color: $gold;            
+            color: $gold;
         }
 
         &:active {

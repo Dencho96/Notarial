@@ -6,7 +6,14 @@ $(function(){
     lazy: false
     };
     var mask = IMask(element, maskOptions);
+
+    $(".header__btn").click(function(){
+        $(".header__btn").toggleClass("is-active");
+    });
     
+    $('.header__btn').on('click', function() {
+        $('.header__nav').slideToggle();
+    });
 })
 
 
