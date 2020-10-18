@@ -38,3 +38,37 @@ body{
 .d-flex{
     display: flex;
 }
+
+.fancybox-bg{
+    opacity: 0.7;
+}
+
+.logo{
+    outline: transparent;
+}
+
+.btn{
+    padding: 15px;
+    background-color: rgba(black, 0.4);
+    border: 3px solid $gold;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: transparent;
+    cursor: pointer;
+    transition-property: border-color, background-color, box-shadow;
+    transition-duration: 0.3s;
+    &:focus{
+        border-color: rgb(255, 145, 0);
+    }
+    &:hover{
+        background-color: $gold;
+    }
+    &:active{
+        box-shadow: 0 0 30px -10px inset black;
+    }
+}
+
+.order{
+    display: none;
+}

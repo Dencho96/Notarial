@@ -1,0 +1,76 @@
+.footer {
+    padding-top: 85px;
+    background-color: rgba(black, 0.2);
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__contacts {
+        max-width: 400px;
+        font-style: normal;
+    }
+
+    &__title {
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        font-size: 36px;
+        font-weight: 700;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            width: 140px;
+            height: 3px;
+            background-color: $gold;
+        }
+    }
+    &__list{
+        margin-bottom: 25px;
+    }
+    &__item {
+        &+& {
+            margin-top: 20px;
+        }
+    }
+
+    &__link {
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 16px;
+        transition: color, 0.2s;
+        outline: transparent;
+
+        &:focus,
+        &:hover,
+        &:active {
+            background-color: #aaa;
+        }
+
+        &:hover {
+            color: white;
+        }
+
+        &:active {
+            color: gold;
+        }
+    }
+
+    &__map {
+        margin-bottom: 35px;
+        border: 2px solid $gold;
+        border-radius: 3px;
+    }
+
+    &__copy {
+        padding: 43px 0;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: black;
+        color: $gold;
+    }
+}

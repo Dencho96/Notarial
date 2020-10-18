@@ -1,0 +1,44 @@
+.order {
+    max-width: 570px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(black, 0.3);
+    color: white;
+
+    &__label {
+        display: block;
+        height: 0;
+        font-size: 0;
+    }
+
+    &__input {
+        display: block;
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto 15px;
+        height: 45px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        border: none;
+        outline: transparent;
+        transition: box-shadow 0.2s;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 3px #555;
+        }
+
+        &:focus,
+        &:active {
+            box-shadow: 0 0 3px $gold;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 35px auto 0;
+    }
+}

@@ -3,4 +3,9 @@
 @import 'global';
 
 @import 'components/header';
-@import 'pages/page-index';
+@import 'page-index/order';
+@import 'page-index/hero';
+@import 'page-index/about';
+@import 'page-index/services';
+@import 'page-index/stats';
+@import 'components/footer';

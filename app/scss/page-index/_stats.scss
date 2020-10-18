@@ -1,0 +1,49 @@
+.stats {
+    position: relative;
+    padding: 180px 0;
+    text-align: center;
+    background-size: cover;
+    color: #f9f4f0;
+
+    &__inner {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        font-size: 34px;
+        text-transform: uppercase;
+        color: $gold;
+    }
+
+    &__box {
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 255px;
+        width: 100%;
+    }
+
+    &__count{
+        display: block;
+        margin-bottom: 18px;
+        font-size: 46px;
+        font-weight: 700;
+    }
+
+    &__text{
+        font-size: 18px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(black, 0.6);
+    }
+}

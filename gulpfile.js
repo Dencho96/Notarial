@@ -20,7 +20,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('script', function() {
-    return gulp.src([
+    return gulp.src([            
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+            'node_modules/imask/dist/imask.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
@@ -29,7 +31,8 @@ gulp.task('script', function() {
 
 gulp.task('style', function() {
     return gulp.src([
-            'node_modules/normalize.css/normalize.css'
+            'node_modules/normalize.css/normalize.css',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
         ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -61,4 +64,4 @@ gulp.task('watch', function() {
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
-gulp.task('default', gulp.parallel('style', 'sass', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'))

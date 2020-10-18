@@ -1,0 +1,29 @@
+.about{
+    padding-top: 100px;
+    &__inner{
+        margin-bottom: 100px;
+    }
+    &__title{
+        position: relative;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        font-size: 24px;
+        text-transform: uppercase;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 105px;
+            height: 3px;
+            background-color: $gold;
+        }
+    }
+    &__text{
+        margin: 0;
+        max-width: 590px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
